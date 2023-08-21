@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+        .anjay {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .anjay:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            background-color: rgb(0, 0, 0);
+            color: black;
+            cursor: pointer;
+            padding: 15px;
+
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+        .hahay {
+            padding-top: 430px;
+        }
+
+        .gege {
+            padding-top: 25px;
+        }
+
+        /* .sec-1 .animate {
+            transform: translateX(50%);
+        } */
+
+        /* .sec-1 .show-animate .animate {
+            transform: translateX(-200%);
+        } */
+
+        .show-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .show-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(184, 184, 184);">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="rounded-full cursor-pointer">❕</button>
+    <div class="container">
+        <section class="sec-1">
+            <h1 class="font-mono anjay text-2xl m-4 animate">Muhammad Taufiqurrahman, Programmer</h1>
+            <div class="grid grid-rows-1 grid-cols-2 mx-4 animate">
+                <div class="flex justify-end hahay">
+                    <h1 class="text-6xl font-mono">
+                        Portofolio <br>
+                        Taufiqurrahman
+                    </h1>
+                </div>
+                <div class="flex flex-row-reverse">
+                    <div><img src="image/p-4.jpeg" width="370px" height="480px"></div>
+                    <div class="pr-4"><img src="image/p-2.jpeg" width="370px" height="580px"></div>
+                </div>
+            </div>
+            <div class="flex justify-center mx-4 font-mono text-2xl gege animate">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded"><a href="#project">
+                        View My Work</a>
+                </button>
+            </div>
+        </section>
+        <section class="sec-2">
+            <h1 class="font-mono anjay text-2xl m-4 pt-12">Biography</h1>
+            <div class="grid grid-cols-2 gap-4 mx-4">
+                <div><img src="image/p-6.jpg" width="700px" height="700px" class="m-4"></div>
+                <div class="text-2xl flex justify-center">
+                    <p class="m-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut culpa amet illo ex odio
+                        commodi officia voluptatibus suscipit error temporibus praesentium magnam dolore optio eligendi,
+                        voluptas minima expedita dolores eos? Ad, tenetur.</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-3">
+            <h1 class="font-mono anjay text-2xl m-4 pt-12">My background</h1>
+            <div class="mx-4 flex justify-center pb-4">
+                <img src="image/p-8.jpg" class="m-4">
+            </div>
+            <div class="grid grid-cols-4 gap-4 pt-2">
+                <div class="m-5"><span></span></div>
+                <ul class=" text-gray-500 list-item dark:text-gray-400 font-mono text-1xl m-5">
+                    <p class="font-mono text-2xl" style="font-weight: bold;">Skills</p>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                </ul>
+                <ul class=" text-gray-500 list-item dark:text-gray-400 font-mono text-1xl m-5">
+                    <p class=" font-mono text-2xl" style="font-weight: bold;">Education</p>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                    <li>asdnasd</li>
+                </ul>
+                <div class="m-5"><span></span></div>
+            </div>
+        </section>
+        <section class="sec-4">
+            <h1 class="font-mono anjay text-2xl m-4 pt-12" id="project">My Project</h1>
+            <div class="grid grid-cols-4 gap-4 pt-2 m-4">
+                <div class="bang">
+                    <img src="image/p-5.png" alt="Notebook" style="width:100%;">
+                    <div class="alok">
+                      <h1>Schedulle Page</h1>
+                    </div>
+                </div>
+                <div class="bang">
+                    <img src="image/p-15.png" alt="Notebook" style="width:100%;">
+                    <div class="alok">
+                      <h1>Register Form</h1>
+                    </div>
+                </div>
+                <div class="bang col-span-2">
+                    <img src="image/p-14.png" alt="Notebook" style="width:100%;">
+                    <div class="alok">
+                      <h1>Home Page</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="mx-4 grid grid-cols-2 gap-4">
+                <div class="flex justify-center m-3 font-mono">
+                    <p>1. Mobile Absent Application</p>
+                </div>
+                <div class="flex justify-center m-3 font-mono">
+                    <p>2. Simple News Web</p>
+                </div>
+            </div>
+        </section>
+        <section class="sec-5">
+            <h1 class="font-mono anjay text-2xl m-4 pt-12"></h1>
+            <div class="gap-4 grid grid-rows-4 grid-flow-row m-4">
+                <div class="grid grid-rows-1 grid-cols-2 pt-7">
+                    <p class="font-mono text-2xl font-bold" style="font-size: 48px; line-height: 56px;">Contact
+                        <br>Information
+                    </p>
+                    <h1 class="font-mono text-2xl flex flex-row-reverse">Muhammad Taufiqurrahman</h1>
+                </div>
+                <div></div>
+                <div></div>
+                <div class="grid grid-cols-4 pt-32">
+                    <div class="font-mono float-right">
+                        <p style="font-weight: bold;">Address</p><br><a href="https://goo.gl/maps/EzQjRZy12P8TVE567" target="_blank">jln. Gajah Mada no.24 Padang</a>
+                    </div>
+                    <div class="font-mono float-left">
+                        <p style="font-weight: bold;">Email</p><br><a href="mailto:m.taufiqurrahman2912@gmail.com" target="_blank">m.taufiqurrahma2912@gmail.com</a>
+                    </div>
+                    <div class="font-mono float-left">
+                        <p style="font-weight: bold;">Phone</p><br><a href="https://wa.me/6289524451643" target="_blank">(+62)89524451643</a>
+                    </div>
+                    <div class="font-mono float-left">
+                        <p style="font-weight: bold;">Github</p><br>
+                        <a href="https://github.com/TaufiqTzy" target="_blank"
+                            class="text-base font-semibold text-white bg-teal-500 py-3 px-8 rounded-full">TaufiqTzy</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+<script src="js/style.js"></script>
